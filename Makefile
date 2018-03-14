@@ -1,4 +1,4 @@
-REGISTRY := jetstackexperimental
+REGISTRY := quay.io/jetstack
 IMAGE_NAME := oauth2-proxy
 IMAGE_TAGS := canary
 BUILD_TAG := build
