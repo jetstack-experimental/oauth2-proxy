@@ -15,5 +15,7 @@ RUN mkdir -p /tmp/oauth2-proxy && \
 
 EXPOSE 4180
 
+ADD index.html /var/www/index.html
+
 ENTRYPOINT ["/usr/local/bin/oauth2_proxy"]
-CMD [ "--upstream=http://0.0.0.0:8080/", "--http-address=0.0.0.0:4180" ]
+CMD [ "--upstream=file:///var/www/", "--http-address=0.0.0.0:4180" ]
